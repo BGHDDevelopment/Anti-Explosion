@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Anti-Explosion:jar">
+    <output-path>$PROJECT_DIR$/../../Development</output-path>
+    <root id="archive" name="Anti-Explosion.jar">
+      <element id="module-output" name="Anti-Explosion" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
+    </root>
+  </artifact>
+</component>
