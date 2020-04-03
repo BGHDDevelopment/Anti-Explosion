@@ -1,14 +1,14 @@
-package me.noodles;
+package me.noodles.antiexplosion;
 import java.net.*;
 import java.io.*;
 
 public class UpdateChecker
 {
-    public MainExplosion plugin;
+    public AntiExplosion plugin;
     public String version;
     
     
-    public UpdateChecker(MainExplosion plugin) {
+    public UpdateChecker(AntiExplosion plugin) {
         this.plugin = plugin;
         this.version = this.getLatestVersion();
     }
