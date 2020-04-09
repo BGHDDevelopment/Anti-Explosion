@@ -1,0 +1,5 @@
+name: AntiExplosion
+version: ${project.version}
+main: me.noodles.antiexplosion.AntiExplosion
+authors: [BGHDDevelopment]
+website: https://bghddevelopment.com/

@@ -1,17 +1,17 @@
-package me.noodles;
+package me.noodles.antiexplosion;
 
 import org.bukkit.plugin.java.*;
 import org.bukkit.event.*;
 import org.bukkit.plugin.*;
 import org.bukkit.*;
 
-public class MainExplosion extends JavaPlugin implements Listener
+public class AntiExplosion extends JavaPlugin implements Listener
 {
-    public static MainExplosion plugin;
+    public static AntiExplosion plugin;
     private UpdateChecker checker;
 
     public void onEnable() {
-        MainExplosion.plugin = this;
+        AntiExplosion.plugin = this;
         final PluginDescriptionFile VarUtilType = this.getDescription();
         this.getLogger().info("AntiExplosion V" + VarUtilType.getVersion() + " starting...");
         this.saveDefaultConfig();
@@ -28,7 +28,7 @@ public class MainExplosion extends JavaPlugin implements Listener
                 getServer().getConsoleSender().sendMessage("------------------------");
                 getServer().getConsoleSender().sendMessage("AntiExplosion is outdated!");
                 getServer().getConsoleSender().sendMessage("Newest version: " + this.checker.getLatestVersion());
-                getServer().getConsoleSender().sendMessage("Your version: " + MainExplosion.plugin.getDescription().getVersion());
+                getServer().getConsoleSender().sendMessage("Your version: " + AntiExplosion.plugin.getDescription().getVersion());
                 getServer().getConsoleSender().sendMessage("Please Update Here: https://www.spigotmc.org/resources/45655");
                 getServer().getConsoleSender().sendMessage("------------------------");
             }
@@ -46,8 +46,8 @@ public class MainExplosion extends JavaPlugin implements Listener
     }
     
     @SuppressWarnings({ "unchecked", "rawtypes"})
-	public static MainExplosion getPlugin() {
-        return (MainExplosion)getPlugin((Class)MainExplosion.class);
+	public static AntiExplosion getPlugin() {
+        return (AntiExplosion)getPlugin((Class) AntiExplosion.class);
     }
     
 }

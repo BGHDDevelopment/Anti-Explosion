@@ -1,4 +1,4 @@
-package me.noodles;
+package me.noodles.antiexplosion;
 
 import org.bukkit.event.*;
 import org.bukkit.event.entity.*;
